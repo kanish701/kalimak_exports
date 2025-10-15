@@ -317,11 +317,11 @@ const About: React.FC = () => {
               <div className="aspect-square rounded-lg overflow-hidden mb-6 shadow-xl">
                 <img
                   src="https://images.pexels.com/photos/3768911/pexels-photo-3768911.jpeg?auto=compress&cs=tinysrgb&w=400"
-                  alt="Adeline Supreme"
+                  alt="Adeline Kalimah"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className={`text-xl font-serif font-bold ${DARK_TEXT_CLASS} mb-2`}>Adeline Supreme</h3>
+              <h3 className={`text-xl font-serif font-bold ${DARK_TEXT_CLASS} mb-2`}>Adeline Kalimah</h3>
               {/* Accent color for title */}
               <p className={`${BRAND_TEXT_CLASS} font-bold mb-4`}>Head of Ethical Production</p>
               <p className="text-gray-700 text-sm leading-relaxed">

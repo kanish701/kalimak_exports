@@ -32,7 +32,7 @@ const Navigation: React.FC = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center">
-            <img src={kalimahlogo} alt="Supreme Logo" className="h-20 w-auto" />
+            <img src={kalimahlogo} alt="kalimah Logo" className="h-20 w-auto" />
             </Link>
 
           {/* Desktop Navigation */}

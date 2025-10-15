@@ -116,7 +116,7 @@ const Footer: React.FC = () => {
         {/* Bottom Copyright */}
         <div className="border-t border-gray-200 mt-12 pt-8 text-center">
           <p className="text-gray-500 text-sm">
-            © 2025 SUPREME. All Rights Reserved. | <span className={BRAND_TEXT_CLASS}>Actionable Ethics & Quality.</span>
+            © 2025 Kalimah Exports. All Rights Reserved. | <span className={BRAND_TEXT_CLASS}>Actionable Ethics & Quality.</span>
           </p>
         </div>
       </div>
