@@ -22,26 +22,26 @@ const Services: React.FC = () => {
             description: 'Our core service focusing on high-volume knitwear: Casual Men & Women T-Shirts and Essential Clothings. We ensure fast lead times and consistent quality with a daily capacity of 4,000 units for this line.',
             features: [
                 'Daily Capacity: 4,000 units/day',
-                'Product Lines: T-Shirts, Polos, Knit Basics',
+                'Product Lines: T-Shirts, Polos, Hoddies, Sweatwear, Knit Basics',
                 'Finishing: Washing, Custom Tagging, Packing',
                 'Quality: Multi-stage QC checks',
             ],
             image: 'https://i.pinimg.com/736x/44/21/56/4421568c46438f7a6045a50c7345248b.jpg',
             popular: true
         },
-        {
-            icon: Layers,
-            title: 'SPECIALTY UNDERGARMENT LINE',
-            subtitle: 'High-Volume Underwear & Intimates',
-            description: 'A dedicated, high-capacity line for Undergarments for men and women. Our focus on specialized machinery and compliance allows us to achieve superior volumes and quality for intimate apparel.',
-            features: [
-                'Daily Capacity: 100,000 units/day',
-                'Products: Men’s & Women’s Underwear',
-                'Material: Focus on Soft, Certified Knits',
-                'Compliance: Strict Hygiene & Packaging QA',
-            ],
-            image: 'https://butterry.com/blog/wp-content/uploads/2023/06/best-underwear-brands-in-India-butterry-blogs.jpg'
-        },
+        // {
+        //     icon: Layers,
+        //     title: 'SPECIALTY UNDERGARMENT LINE',
+        //     subtitle: 'High-Volume Underwear & Intimates',
+        //     description: 'A dedicated, high-capacity line for Undergarments for men and women. Our focus on specialized machinery and compliance allows us to achieve superior volumes and quality for intimate apparel.',
+        //     features: [
+        //         'Daily Capacity: 100,000 units/day',
+        //         'Products: Men’s & Women’s Underwear',
+        //         'Material: Focus on Soft, Certified Knits',
+        //         'Compliance: Strict Hygiene & Packaging QA',
+        //     ],
+        //     image: 'https://butterry.com/blog/wp-content/uploads/2023/06/best-underwear-brands-in-India-butterry-blogs.jpg'
+        // },
         {
             icon: Package,
             title: 'KIDS & FAMILY NIGHTWEAR',
@@ -71,8 +71,8 @@ const Services: React.FC = () => {
     ];
 
     const factoryProfileStats = [
-        { icon: Shirt, title: 'Casual Line', description: '4,000 units per day capacity.' },
-        { icon: Layers, title: 'Underwear Line', description: '100,000 units per day capacity.' },
+        { icon: Shirt, title: 'Casual Line', description: '60,000 units per day capacity.' },
+        { icon: Layers, title: 'Kids and Nightwear', description: '100,000 units per day capacity.' },
         { icon: Package, title: 'Kids PJ Sets', description: '12,000 sets per day capacity.' }
     ];
 
@@ -160,10 +160,10 @@ const Services: React.FC = () => {
                         </div>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                          <button className={`${CTA_PRIMARY_CLASS} flex items-center justify-center w-full sm:w-auto`}>
+                          {/* <button className={`${CTA_PRIMARY_CLASS} flex items-center justify-center w-full sm:w-auto`}>
                             REQUEST A QUOTE
                             <ArrowRight className={`ml-2 w-4 h-4 ${DARK_TEXT_CLASS}`} />
-                          </button>
+                          </button> */}
                           <button className={`${CTA_OUTLINE_CLASS} w-full sm:w-auto`}>
                             VIEW PRODUCT GALLERY
                           </button>

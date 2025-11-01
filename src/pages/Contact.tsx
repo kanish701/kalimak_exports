@@ -157,7 +157,7 @@ const Contact: React.FC = () => {
                     <Phone className={`w-6 h-6 ${DARK_TEXT_CLASS}`} />
                   </div>
                   <div>
-                    <div className={`font-bold ${DARK_TEXT_CLASS} mb-1 uppercase tracking-wide`}>Sales Line (KPB)</div>
+                    {/* <div className={`font-bold ${DARK_TEXT_CLASS} mb-1 uppercase tracking-wide`}>Sales Line (KPB)</div> */}
                     <a href="tel:+9114214242849" className="text-gray-700 hover:text-gray-900 transition-colors">+91 14214242849</a>
                     <div className="text-sm text-gray-500">Fastest response for new projects.</div>
                   </div>
@@ -169,8 +169,8 @@ const Contact: React.FC = () => {
                     <Phone className={`w-6 h-6 ${DARK_TEXT_CLASS}`} />
                   </div>
                   <div>
-                    <div className={`font-bold ${DARK_TEXT_CLASS} mb-1 uppercase tracking-wide`}>Mobile (KPB)</div>
-                    <a href="tel:+919677704849" className="text-gray-700 hover:text-gray-900 transition-colors">+91 96777 04849</a>
+                    {/* <div className={`font-bold ${DARK_TEXT_CLASS} mb-1 uppercase tracking-wide`}>Mobile (KPB)</div> */}
+                    <a href="tel:+919677704849" className="text-gray-700 hover:text-gray-900 transition-colors">+91 98423 94444</a>
                     <div className="text-sm text-gray-500">Available via WhatsApp/Signal.</div>
                   </div>
                 </div>
@@ -181,7 +181,7 @@ const Contact: React.FC = () => {
                     <Mail className={`w-6 h-6 ${DARK_TEXT_CLASS}`} />
                   </div>
                   <div>
-                    <div className={`font-bold ${DARK_TEXT_CLASS} mb-1 uppercase tracking-wide`}>Email Address</div>
+                    {/* <div className={`font-bold ${DARK_TEXT_CLASS} mb-1 uppercase tracking-wide`}>Email Address</div> */}
                     <a href="mailto:kpb@kalimahexports.com" className="text-gray-700 hover:text-gray-900 transition-colors">kpb@kalimahexports.com</a>
                     <div className="text-sm text-gray-500">For general inquiries and documents.</div>
                   </div>
@@ -193,10 +193,10 @@ const Contact: React.FC = () => {
                     <MapPin className={`w-6 h-6 ${DARK_TEXT_CLASS}`} />
                   </div>
                   <div>
-                    <div className={`font-bold ${DARK_TEXT_CLASS} mb-1 uppercase tracking-wide`}>Factory Address</div>
+                    {/* <div className={`font-bold ${DARK_TEXT_CLASS} mb-1 uppercase tracking-wide`}>Factory Address</div> */}
                     <address className="not-italic text-gray-700">
-                      61/2 EB Colony, Gandhi nagar,<br />
-                      Tirupur, 641603, India
+                      Uthukuli Road,<br />
+                      Tirupur, 641607, India
                     </address>
                     <div className="text-sm text-gray-500">Tirupur is the knitwear manufacturing hub.</div>
                   </div>

@@ -92,8 +92,8 @@ const About: React.FC = () => {
               {/* Floating Stats Card - Uses Yellow/Dark Contrast */}
               <div className={`absolute -bottom-6 -right-6 ${BRAND_BG_CLASS} rounded-lg p-6 shadow-2xl border-4 border-white ${HOVER_LIFT_CLASS}`}>
                 <div className="text-center">
-                  <div className={`text-4xl font-serif font-bold ${DARK_TEXT_CLASS} mb-1`}>500K+</div>
-                  <div className={`text-sm ${DARK_TEXT_CLASS} font-semibold`}>Units Produced Annually</div>
+                  <div className={`text-4xl font-serif font-bold ${DARK_TEXT_CLASS} mb-1`}>100K+</div>
+                  <div className={`text-sm ${DARK_TEXT_CLASS} font-semibold`}>Pices Produced per month</div>
                 </div>
               </div>
             </div>
@@ -106,24 +106,24 @@ const About: React.FC = () => {
               
               <div className="space-y-6 text-gray-700 leading-relaxed">
                 <p>
-                  Kalimah Exports is a leading exporter with extensive experience across various supply chain segments, catering to the diverse needs of the merchandising and fashion industry.
-                  Over the years, we have collaborated with renowned global brands such as TJ Maxx, Funky Buddha, Kalimah Jeans, and Al Ahli Football Licensed Merchandise, among others.
+                  Kalimah Exports is a leading sourcing office with extensive experience across various supply chain segments, catering to the diverse needs of the fashion industry.
+                  Over the years, we have collaborated with renowned global brands such as TJ Maxx, Funky Buddha, Kalimah Jeans, Mitsubishi Racing, Al-Nassr and Al Ahli Football Licensed Merchandise, among others.
                 </p>
                 
                 <p>
                   Located in the knitwear manufacturing hub of Tirupur, South India, where some of the world’s most prominent fashion brands source their products, 
-                  Kalimah Exports stands as a trusted supplier known for high-quality casual T-shirts and allied apparel products.
+                  Kalimah Exports stands as a trusted supplier known for high-quality casual T-shirts, Polo shirts, Sweatwear and allied apparel products.
                 </p>
                 
                 <p>
-                  Our commitment to excellence, timely delivery, and trend-driven designs has positioned us as one of the reliable partners in the global fashion supply chain.
+                  Our commitment to excellence, quick communication, sample development, production follow-up, timely delivery, and ethical practices has positioned us as one of the reliable sourcing in the global fashion supply chain.
                 </p>
               </div>
 
               {/* Stats Bar - Uses Yellow Accent */}
               <div className="grid grid-cols-3 gap-6 pt-8">
                 <div className="text-center">
-                  <div className={`text-3xl font-serif font-bold ${BRAND_TEXT_CLASS} mb-1`}>15+</div>
+                  <div className={`text-3xl font-serif font-bold ${BRAND_TEXT_CLASS} mb-1`}>16+</div>
                   <div className="text-gray-600 text-sm font-semibold">Years Experience</div>
                 </div>
                 <div className="text-center">
@@ -156,29 +156,29 @@ const About: React.FC = () => {
             {/* 1. GLOBAL BRANDS */}
             <div className={`${CARD_CLASS} p-8 ${HOVER_LIFT_CLASS}`}>
               <div className={`text-sm font-bold ${BRAND_TEXT_CLASS} mb-2 uppercase tracking-wider`}>GLOBAL BRANDS</div>
-              <div className={`text-5xl font-extrabold mb-4 ${DARK_TEXT_CLASS}`}>50+</div>
+              <div className={`text-5xl font-extrabold mb-4 ${DARK_TEXT_CLASS}`}>15+</div>
               <div className="text-gray-600 text-sm">We are the trusted manufacturing partner for over 50 brands across the globe, from emerging labels to retail giants.</div>
             </div>
 
             {/* 2. YEARS OF EXPERIENCE */}
             <div className={`${CARD_CLASS} p-8 ${HOVER_LIFT_CLASS}`}>
               <div className={`text-sm font-bold ${BRAND_TEXT_CLASS} mb-2 uppercase tracking-wider`}>YEARS OF EXPERIENCE</div>
-              <div className={`text-5xl font-extrabold mb-4 ${DARK_TEXT_CLASS}`}>15+</div> {/* Corrected from 35+ to 15+ based on previous section */}
-              <div className="text-gray-600 text-sm">With over fifteen years in the industry, our expertise ensures a seamless and reliable production experience.</div>
+              <div className={`text-5xl font-extrabold mb-4 ${DARK_TEXT_CLASS}`}>16+</div> 
+              <div className="text-gray-600 text-sm">With over sixteen years in the industry, our expertise ensures a seamless and reliable production experience.</div>
             </div>
 
             {/* 3. QUICKEST LEAD TIME */}
             <div className={`${CARD_CLASS} p-8 ${HOVER_LIFT_CLASS}`}>
               <div className={`text-sm font-bold ${BRAND_TEXT_CLASS} mb-2 uppercase tracking-wider`}>QUICKEST LEAD TIME</div>
-              <div className={`text-5xl font-extrabold mb-4 ${DARK_TEXT_CLASS}`}>4 WEEKS</div>
-              <div className="text-gray-600 text-sm">Our streamlined process allows us to deliver high-quality production runs in as little as 4 weeks.</div>
+              <div className={`text-5xl font-extrabold mb-4 ${DARK_TEXT_CLASS}`}>4-6 WEEKS</div>
+              <div className="text-gray-600 text-sm">Our streamlined process allows us to deliver high-quality production runs in as little as 4-6 weeks.</div>
             </div>
             
             {/* 4. GLOBAL REACH */}
             <div className={`${CARD_CLASS} p-8 ${HOVER_LIFT_CLASS}`}>
               <div className={`text-sm font-bold ${BRAND_TEXT_CLASS} mb-2 uppercase tracking-wider`}>GLOBAL REACH</div>
-              <div className={`text-5xl font-extrabold mb-4 ${DARK_TEXT_CLASS}`}>20+</div>
-              <div className="text-gray-600 text-sm">Our products are shipped to more than 20 countries, making us a truly global manufacturing partner.</div>
+              <div className={`text-5xl font-extrabold mb-4 ${DARK_TEXT_CLASS}`}>10+</div>
+              <div className="text-gray-600 text-sm">Our products are shipped to more than 10 countries, making us a truly global manufacturing partner.</div>
             </div>
           </div>
         </div>
@@ -222,8 +222,8 @@ const About: React.FC = () => {
               {/* Step Template (Themed with Yellow/Dark Contrast) */}
               {/* Note: Removed unused hover states from original list structure */}
               {[
-                { num: '01', title: 'PRODUCT SOURCING', desc: 'We leverage our global network to find the best fabrics, trims, and manufacturers, ensuring premium quality and ethical sourcing from the outset.' },
-                { num: '02', title: 'RESEARCH AND DEVELOPMENT', desc: 'Our R&D team analyzes market trends and forecasts, developing innovative concept products that keep your brand ahead of the curve.' },
+                { num: '01', title: 'Prompt Communication', desc: 'We value transparent and timely communication, keeping you informed at every milestone. Our dedicated team ensures swift responses and smooth coordination, making collaboration effortless and efficient.' },
+                { num: '02', title: 'PRODUCT SOURCING', desc: 'We leverage our global network to find the best fabrics, trims, and manufacturers, ensuring premium quality and ethical sourcing from the outset.' },
                 { num: '03', title: 'SAMPLE DEVELOPMENT', desc: 'We meticulously create and refine samples for approval, ensuring every detail matches your vision before moving into mass production.' },
                 { num: '04', title: 'MERCHANDISING', desc: 'Our Merchandising Team acts as your key project liaison, managing communication, deadlines, and the entire production timeline from start to finish.' },
                 { num: '05', title: 'QUALITY ASSURANCE', desc: 'We implement rigorous quality checks at every stage, guaranteeing that every final product meets your specifications and global excellence standards.' },
@@ -247,7 +247,7 @@ const About: React.FC = () => {
       </section>
       
       {/* --- Values Section (No changes, already themed) --- */}
-      <section className={`${SECTION_PADDING_CLASS} bg-white`}>
+      {/* <section className={`${SECTION_PADDING_CLASS} bg-white`}>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className={`text-4xl font-serif font-bold ${DARK_TEXT_CLASS} mb-4`}>Our Core <span className={BRAND_TEXT_CLASS}>Driving Values</span></h2>
@@ -258,9 +258,9 @@ const About: React.FC = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <div key={index} className={`${CARD_CLASS} p-8 text-center ${HOVER_LIFT_CLASS}`}>
+              <div key={index} className={`${CARD_CLASS} p-8 text-center ${HOVER_LIFT_CLASS}`}> */}
                 {/* Icon block uses high-contrast yellow/dark */}
-                <div className={`w-16 h-16 ${BRAND_BG_CLASS} rounded-full flex items-center justify-center mx-auto mb-6`}>
+                {/* <div className={`w-16 h-16 ${BRAND_BG_CLASS} rounded-full flex items-center justify-center mx-auto mb-6`}>
                   <value.icon className={`w-8 h-8 ${DARK_TEXT_CLASS}`} />
                 </div>
                 <h3 className={`text-xl font-serif font-bold ${DARK_TEXT_CLASS} mb-4`}>{value.title}</h3>
@@ -269,10 +269,10 @@ const About: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* --- Client Logos Section --- */}
-      <section className={`${SECTION_PADDING_CLASS} bg-white`}>
+      {/* <section className={`${SECTION_PADDING_CLASS} bg-white`}>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className={`text-4xl font-serif font-bold ${DARK_TEXT_CLASS} mb-4`}>As Featured & <span className={BRAND_TEXT_CLASS}>Trusted By</span></h2>
@@ -281,9 +281,9 @@ const About: React.FC = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center mb-16"> */}
             {/* Media Logos use high-contrast shadow and lift */}
-            <div className={`flex items-center justify-center p-6 bg-white rounded-lg shadow-md border border-gray-100 ${HOVER_LIFT_CLASS}`}>
+            {/* <div className={`flex items-center justify-center p-6 bg-white rounded-lg shadow-md border border-gray-100 ${HOVER_LIFT_CLASS}`}>
               <div className={`text-xl font-serif font-bold ${DARK_TEXT_CLASS} opacity-80`}>VOGUE</div>
             </div>
             <div className={`flex items-center justify-center p-6 bg-white rounded-lg shadow-md border border-gray-100 ${HOVER_LIFT_CLASS}`}>
@@ -300,10 +300,10 @@ const About: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* --- Team Section --- */}
-      <section className={`${SECTION_PADDING_CLASS} bg-gray-50`}>
+      {/* <section className={`${SECTION_PADDING_CLASS} bg-gray-50`}>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className={`text-4xl font-serif font-bold ${DARK_TEXT_CLASS} mb-4`}>Meet Our <span className={BRAND_TEXT_CLASS}>Core Team</span></h2>
@@ -321,9 +321,9 @@ const About: React.FC = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className={`text-xl font-serif font-bold ${DARK_TEXT_CLASS} mb-2`}>Adeline Kalimah</h3>
+              <h3 className={`text-xl font-serif font-bold ${DARK_TEXT_CLASS} mb-2`}>Adeline Kalimah</h3> */}
               {/* Accent color for title */}
-              <p className={`${BRAND_TEXT_CLASS} font-bold mb-4`}>Head of Ethical Production</p>
+              {/* <p className={`${BRAND_TEXT_CLASS} font-bold mb-4`}>Head of Ethical Production</p>
               <p className="text-gray-700 text-sm leading-relaxed">
                 Certified auditor with 8+ years ensuring compliance with GOTS, WRAP, and SAAS standards across our facilities.
               </p>
@@ -360,7 +360,7 @@ const About: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

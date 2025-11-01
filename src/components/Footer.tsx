@@ -1,32 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import sedexLogo from '../assets/sedex-.png';
+import wrapLogo from '../assets/Warap-removebg-preview.png';
+import oekoTexLogo from '../assets/oeko-tex-loog.png';
+import organicLogo from '../assets/images-removebg-preview.png';
 
 // --- THEME DEFINITIONS (Matching Bright Yellow index.css) ---
 const BRAND_TEXT_CLASS = 'text-brand';          // Core Color: #FFC43A
 const BRAND_BG_CLASS = 'bg-brand';              // Core Color: #FFC43A
 const DARK_TEXT_CLASS = 'text-dark-neutral';    // Dark Neutral: #2D2D2D
-const BRAND_BG_HOVER_CLASS = 'hover:bg-brand-dark'; // Darker Yellow hover
+const BRAND_BG_HOVER_CLASS = 'hover:bg-brand-dark'; 
 
 const Footer: React.FC = () => {
   return (
     // Footer remains clean white, but border is stronger
     <footer className={`bg-white py-16 border-t-4 border-brand`}> 
       <div className="container mx-auto px-6">
+        
+        {/* Main Grid: md:grid-cols-4 ensures 4 columns on desktop/large screens */}
         <div className="grid md:grid-cols-4 gap-8">
           
           {/* 1. Brand & Description */}
           <div className="space-y-4">
-            {/* Brand Name uses Serif and Dark Text */}
+            {/* Brand Name uses Serif and Dark Text (Corrected 'font-open sans' to 'font-serif' or standard) */}
             <Link to="/" className={`text-3xl font-serif font-bold ${DARK_TEXT_CLASS}`}>
               KALIMAH EXPORTS
             </Link>
-            {/* Action-oriented secondary link using Brand color */}
+            {/* Action-oriented link */}
             <Link 
                 to="/services" 
-                className={`block text-base font-semibold ${BRAND_TEXT_CLASS} hover:${DARK_TEXT_CLASS} transition-colors duration-300`}
+                className={`block text-base font-semibold ${BRAND_TEXT_CLASS} hover:${DARK_TEXT_CLASS} transition-colors duration-300 uppercase`}
             >
-              VIEW OUR PROGRAMS →
+              VIEW SERVICES →
             </Link>
             <p className="text-gray-600 text-sm leading-relaxed">
               We are committed to exceptional quality, ethical sourcing, and sustainable production to empower ambitious brands.
@@ -52,15 +58,24 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* 3. Services/Accreditations */}
+          {/* 3. Accreditations (LOGOS) */}
           <div className="space-y-4">
-            <h3 className={`font-bold text-lg ${DARK_TEXT_CLASS} uppercase tracking-widest`}>Accreditations</h3>
-            <div className="space-y-2 text-sm text-gray-700">
-              <p>SEDEX Member</p>
-              <p>WRAP Certified</p>
-              <p>SAAS Accredited</p>
-              <p className="font-semibold pt-1">GOTS & Organic Fabrics</p>
+            <h3 className={`font-bold text-lg ${DARK_TEXT_CLASS} uppercase tracking-widest`}>Certifications</h3>
+            {/* Logo container: Flex wrap for responsiveness, using a small gap */}
+            <div className="flex flex-wrap items-center gap-3">
+              {/* NOTE: Replace placeholders with your actual PNG/SVG URLs */}
+              <img src={sedexLogo} alt="SEDEX Member" className="h-8 md:h-10 object-contain shadow-sm" />
+              <img src={wrapLogo} alt="WRAP Certified" className="h-8 md:h-10 object-contain shadow-sm" />
+              <img src={oekoTexLogo} alt="SAAS Accredited" className="h-8 md:h-10 object-contain shadow-sm" />
+              <img src={organicLogo} alt="GOTS Organic Fabrics" className="h-8 md:h-10 object-contain shadow-sm" />
             </div>
+            {/* Optional text link */}
+            <Link 
+                to="/about#certifications" 
+                className={`inline-block text-sm font-semibold ${BRAND_TEXT_CLASS} hover:${DARK_TEXT_CLASS} transition-colors duration-300 mt-2`}
+            >
+              VIEW ALL ETHICS →
+            </Link>
           </div>
 
           {/* 4. Contact Info & Social */}
@@ -68,27 +83,29 @@ const Footer: React.FC = () => {
             <h3 className={`font-bold text-lg ${DARK_TEXT_CLASS} uppercase tracking-widest`}>Contact</h3>
             <div className="space-y-3">
               
-              {/* Added Address with MapPin icon */}
+              {/* Address */}
               <div className="flex items-start text-gray-700 text-sm">
-                <MapPin className="w-4 h-4 mr-2 mt-1 shrink-0" />
+                <MapPin className={`w-4 h-4 mr-2 mt-1 shrink-0 ${BRAND_TEXT_CLASS}`} />
                 <address className="not-italic">
-                  61/2 EB Colony,<br/>
-                  {/* Gandhi nagar,<br/> */}
-                  Tirupur, 641603, India
+                  Uthukuli Road,<br/>
+                  Tirupur, 641607, India
                 </address>
               </div>
 
+              {/* Phone 1 */}
               <a href="tel:+9114214242849" className={`flex items-center text-gray-700 text-sm hover:${BRAND_TEXT_CLASS}`}>
-                <Phone className="w-4 h-4 mr-2" />
+                <Phone className={`w-4 h-4 mr-2 ${BRAND_TEXT_CLASS}`} />
                 +91 14214242849
               </a>
-              <a href="tel:+919677704849" className={`flex items-center text-gray-700 text-sm hover:${BRAND_TEXT_CLASS}`}>
-                <Phone className="w-4 h-4 mr-2" />
-                +91 96777 04849
-
+              {/* Phone 2 - Corrected the number provided in the prompt */}
+              <a href="tel:+919842394444" className={`flex items-center text-gray-700 text-sm hover:${BRAND_TEXT_CLASS}`}>
+                <Phone className={`w-4 h-4 mr-2 ${BRAND_TEXT_CLASS}`} />
+                +91 98423 94444
               </a>
+              
+              {/* Email */}
               <a href="mailto:kpb@kalimahexports.com" className={`flex items-center text-gray-700 text-sm hover:${BRAND_TEXT_CLASS}`}>
-                <Mail className="w-4 h-4 mr-2" />
+                <Mail className={`w-4 h-4 mr-2 ${BRAND_TEXT_CLASS}`} />
                 kpb@kalimahexports.com
               </a>
               

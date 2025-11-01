@@ -16,7 +16,7 @@ const Slider: React.FC = () => {
       id: 1,
       image: sliderimg1,
       title: 'Global Manufacturing Partner',
-      subtitle: 'High-Volume Production Solutions',
+      subtitle: 'High-Volume Production Sourcing Solutions',
       description: 'Your trusted partner for large-scale knitwear production. We deliver superior quality garments with speed and unmatched reliability for global brands.',
       buttonText: 'Request a Quote',
       buttonLink: '/contact'
