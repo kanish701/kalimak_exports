@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Instagram, Linkedin, Mail, Phone, MapPin, Send, Clock, Factory } from 'lucide-react';
-
+import { Instagram, Linkedin, Mail, Phone, MapPin, Send, Clock, Factory, Plane } from 'lucide-react';
 // --- THEME DEFINITIONS (Matching Bright Yellow index.css) ---
 const BRAND_TEXT_CLASS = 'text-brand';          // Core Color: #FFC43A
 const BRAND_BG_CLASS = 'bg-brand';              // Core Color: #FFC43A
@@ -19,6 +18,7 @@ const Contact: React.FC = () => {
     message: ''
   });
 
+  // NOTE: In a production app, use a custom modal instead of alert().
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
@@ -36,9 +36,9 @@ const Contact: React.FC = () => {
 
   return (
     <div>
-      {/* Hero Section */}
-      {/* <section className={SECTION_PADDING_CLASS}>
-        <div className="container mx-auto px-6 text-center pt-20 pb-12">
+      {/* Hero Section - Uncommented and themed */}
+      <section className={`${SECTION_PADDING_CLASS} bg-white`}>
+        <div className="container mx-auto px-6 text-center">
           <div className="max-w-4xl mx-auto space-y-8">
             <h1 className={`text-5xl lg:text-6xl font-serif font-bold ${DARK_TEXT_CLASS}`}>
               Ready to <span className={BRAND_TEXT_CLASS}>Start Production?</span>
@@ -48,12 +48,13 @@ const Contact: React.FC = () => {
             </p>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Contact Form & Info (Themed and Content Updated) */}
       <section className={`${SECTION_PADDING_CLASS} bg-gray-50`}>
         <div className="container mx-auto px-6 pt-12 pb-20">
           <div className="grid lg:grid-cols-2 gap-12">
+            
             {/* Contact Form (Themed Inputs) */}
             <div className={`${CARD_CLASS} p-8 shadow-2xl ${HOVER_LIFT_CLASS}`}>
               <h2 className={`text-3xl font-serif font-bold ${DARK_TEXT_CLASS} mb-8`}>Inquire for a Quote</h2>
@@ -157,7 +158,6 @@ const Contact: React.FC = () => {
                     <Phone className={`w-6 h-6 ${DARK_TEXT_CLASS}`} />
                   </div>
                   <div>
-                    {/* <div className={`font-bold ${DARK_TEXT_CLASS} mb-1 uppercase tracking-wide`}>Sales Line (KPB)</div> */}
                     <a href="tel:+9114214242849" className="text-gray-700 hover:text-gray-900 transition-colors">+91 14214242849</a>
                     <div className="text-sm text-gray-500">Fastest response for new projects.</div>
                   </div>
@@ -169,7 +169,6 @@ const Contact: React.FC = () => {
                     <Phone className={`w-6 h-6 ${DARK_TEXT_CLASS}`} />
                   </div>
                   <div>
-                    {/* <div className={`font-bold ${DARK_TEXT_CLASS} mb-1 uppercase tracking-wide`}>Mobile (KPB)</div> */}
                     <a href="tel:+919677704849" className="text-gray-700 hover:text-gray-900 transition-colors">+91 98423 94444</a>
                     <div className="text-sm text-gray-500">Available via WhatsApp/Signal.</div>
                   </div>
@@ -181,7 +180,6 @@ const Contact: React.FC = () => {
                     <Mail className={`w-6 h-6 ${DARK_TEXT_CLASS}`} />
                   </div>
                   <div>
-                    {/* <div className={`font-bold ${DARK_TEXT_CLASS} mb-1 uppercase tracking-wide`}>Email Address</div> */}
                     <a href="mailto:kpb@kalimahexports.com" className="text-gray-700 hover:text-gray-900 transition-colors">kpb@kalimahexports.com</a>
                     <div className="text-sm text-gray-500">For general inquiries and documents.</div>
                   </div>
@@ -193,12 +191,25 @@ const Contact: React.FC = () => {
                     <MapPin className={`w-6 h-6 ${DARK_TEXT_CLASS}`} />
                   </div>
                   <div>
-                    {/* <div className={`font-bold ${DARK_TEXT_CLASS} mb-1 uppercase tracking-wide`}>Factory Address</div> */}
                     <address className="not-italic text-gray-700">
                       Uthukuli Road,<br />
                       Tirupur, 641607, India
                     </address>
                     <div className="text-sm text-gray-500">Tirupur is the knitwear manufacturing hub.</div>
+                  </div>
+                </div>
+
+                {/* Nearest airport */}
+                <div className="flex items-start">
+                  <div className={`w-12 h-12 ${BRAND_BG_CLASS} rounded-lg flex items-center justify-center mr-4 flex-shrink-0 shadow-md`}>
+                    <Plane className={`w-6 h-6 ${DARK_TEXT_CLASS}`} />
+                  </div>
+                  <div>
+                    <address className="not-italic text-gray-700 text-sm">
+                      Coimbatore International Airport (CJB)<br />
+                      Cochin International Airport (COK)
+                    </address>
+                    <div className="text-sm text-gray-500">Easily accessible for factory visits.</div>
                   </div>
                 </div>
                 
@@ -241,18 +252,22 @@ const Contact: React.FC = () => {
             </p>
           </div>
           
-          {/* Map Container (Themed Placeholder) */}
+          {/* Map Container (LIVE MAP EMBED) */}
           <div className={`${CARD_CLASS} overflow-hidden shadow-2xl`}>
             <div className="aspect-video bg-gray-200 relative">
-              {/* Placeholder for Google Maps - Themed with Yellow/Dark */}
-              <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-200 to-gray-400">
-                <div className="text-center text-gray-800">
-                  <MapPin className={`w-16 h-16 mx-auto mb-4 ${BRAND_TEXT_CLASS}`} />
-                  <h3 className={`text-2xl font-serif font-bold ${DARK_TEXT_CLASS} mb-2`}>Kalimah Exports Factory</h3>
-                  <p className="text-lg text-gray-700 opacity-90">61/2 EB Colony, Gandhi nagar, Tirupur, 641603</p>
-                  <p className={`text-sm ${BRAND_TEXT_CLASS} mt-2 font-bold`}>MAP AREA: KNITWEAR MANUFACTURING HUB</p>
-                </div>
-              </div>
+              <iframe
+                // Updated with the new URL you provided
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.1573331529576!2d77.40533107480991!3d11.10164948906756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9090060a9b825%3A0xd78b02e2f7b27f20!2sNew%20look%20fashions!5e0!3m2!1sen!2sin!4v1761998530157!5m2!1sen!2sin"
+                width="100%" // Retained for responsiveness
+                height="100%" // Retained for responsiveness
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Kalimah Exports Factory Location"
+                // Tailwind classes ensure it fills the container
+                className="absolute inset-0 w-full h-full" 
+              ></iframe>
             </div>
           </div>
           
@@ -306,10 +321,22 @@ const Contact: React.FC = () => {
               Take the first step towards ethical, high-quality, and reliable manufacturing. Contact us for a detailed project consultation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              {/* Primary CTA: Yellow BG, Dark Text */}
               <button className={`${CTA_PRIMARY_CLASS} text-lg`}>
                 REQUEST CONSULTATION
               </button>
-              <button className={`${CTA_OUTLINE_CLASS} text-lg border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white`}>
+              {/* Outline CTA: Must use contrasting border/text on the Yellow BG. 
+                  We override the default CTA_OUTLINE colors (which are usually yellow/dark) to use white/dark. */}
+              <button
+                className={`
+                  ${DARK_TEXT_CLASS} 
+                  text-lg 
+                  bg-transparent 
+                  border-white text-white 
+                  hover:bg-white hover:${CARD_CLASS} 
+                  px-6 py-3 rounded transition-colors duration-200
+                `}
+              >
                 GET A FREE QUOTE
               </button>
             </div>

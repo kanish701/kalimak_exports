@@ -2,8 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Check, Download, Factory, Handshake, ShieldCheck } from 'lucide-react';
 
-// Component Imports (assuming these exist and are styled appropriately)
+// Component Imports
 import Slider from '../components/Slider';
+import ClientMap from '../components/ClientMap'; // <-- Correctly imported
 
 // Asset Imports
 import whyChooseUsImage from '../assets/kalimah-apparel.jpeg';
@@ -145,6 +146,34 @@ const Home: React.FC = () => {
         </div>
       </section>
       
+      {/* 3. GLOBAL PRESENCE MAP SECTION */}
+      <section className="py-20 sm:py-24">
+        <div className="container mx-auto px-6">
+          <SectionHeader
+            eyebrow="Global Reach"
+            title={
+              <>
+                Serving Clients{' '}
+                <span className="text-brand">Around the World</span>
+              </>
+            }
+            subtitle="Our commitment to quality and ethical sourcing has allowed us to partner with leading brands across continents."
+          />
+          
+          <div className="mt-16">
+            <ClientMap />
+          </div>
+
+          <div className="mt-12 text-center text-slate-600">
+            <p className="inline-flex items-center text-lg font-medium">
+              <span className="h-4 w-4 rounded-full bg-amber-500 mr-2 border border-amber-600 shadow-sm"></span> 
+              Key Client Presence Countries
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* END GLOBAL PRESENCE MAP SECTION */}
+
       {/* 4. Certifications Section */}
       <section className="py-20 sm:py-24 bg-slate-50">
         <div className="container mx-auto px-6">

@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import sliderimg1 from '../assets/Slider-image01.jpg';
-import sliderimg2 from '../assets/slider-woman-posing.jpg';
+import sliderimg1 from '../assets/1.png';
+import sliderimg2 from '../assets/3.png';
+import sliderimg3 from '../assets/5.png';
+import sliderimg4 from '../assets/6.png';
 
 const Slider: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // --- THEME DEFINITIONS (Assumed based on index.css) ---
-  const BRAND_BG_CLASS = 'bg-brand';       // Core Color: #FFC43A
+  const BRAND_BG_CLASS = 'bg-brand';       // Core Color: #f2c252ff
   const BRAND_BG_HOVER_CLASS = 'hover:bg-brand-dark'; 
   const DARK_TEXT_CLASS = 'text-dark-neutral'; // Dark Text on Yellow
 
@@ -32,7 +34,7 @@ const Slider: React.FC = () => {
     },
     {
       id: 3,
-      image: 'https://fortune.com/img-assets/wp-content/uploads/2014/12/450871616.jpg',
+      image: sliderimg3,
       title: 'Seamless B2B Partnership',
       subtitle: 'Integrated Buying House Services',
       description: 'We act as your dedicated buying house, managing merchandising, R&D, and logistics to streamline your entire apparel development cycle.',
@@ -41,7 +43,7 @@ const Slider: React.FC = () => {
     },
     {
       id: 4,
-      image: 'https://img.freepik.com/free-photo/woman-taking-notes-notebook_176420-14573.jpg?semt=ais_hybrid&w=740&q=80',
+      image: sliderimg4,
       title: 'Advanced In-House Customization',
       subtitle: 'Printing, Embroidery, and Washing',
       description: 'Leverage our state-of-the-art facilities, including Japanese embroidery and imported screen printing, for perfect value-added garment finishing.',
